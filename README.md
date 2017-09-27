@@ -31,6 +31,17 @@ Installation provides gearman-multisite-job-router.py as an executable.
 Output of gearman-multisite-job-router.py --help:
 
 ```
+usage: gearman-multisite-job-router.py [-h] [--drush DRUSH] [--root ROOT]
+
+Routes a multisite payload from STDIN to the drush islandora_job router.
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --drush DRUSH  Path to the drush executable (default: /usr/bin/drush)
+  --root ROOT    Path to the Drupal root (default: /var/www/drupal7)
+
+The exit code will be passed through from drush if the router command
+successfully ran. In the case we failed to get that far, exits with -1
 ```
 
 ## Maintainers/Sponsors:
