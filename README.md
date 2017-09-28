@@ -13,7 +13,7 @@ This program requires Python 2.7.
 Can be installed either using [pip](https://pypi.python.org/pypi/pip), by running:
 
 ```bash
-pip install git|https://github.com/discoverygarden/gearman-multisite-job-router
+pip install git+https://github.com/discoverygarden/gearman-multisite-job-router
 ```
 
 Or using [setuptools](https://pypi.python.org/pypi/setuptools), by running:
@@ -27,6 +27,12 @@ python setup.py install
 ## Usage
 
 Installation provides gearman-multisite-job-router.py as an executable.
+
+The router can be provided to [gearman-init](https://github.com/discoverygarden/gearman-init)'s worker service by defining the `ROUTER` variable in `/etc/defaults/gearman-worker`:
+
+```bash
+ROUTER="gearman-multisite-job-router.py"
+```
 
 Output of gearman-multisite-job-router.py --help:
 
