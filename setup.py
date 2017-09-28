@@ -10,5 +10,4 @@ setup(
     maintainer_email='dev@discoverygarden.ca',
     url='http://github.com/discoverygarden/gearman-multisite-job-router',
     scripts=['bin/gearman-multisite-job-router.py']
-    install_requires=[]
 )
