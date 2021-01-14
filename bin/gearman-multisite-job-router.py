@@ -23,8 +23,8 @@ if __name__ == '__main__':
 
     # Get us some JSON from STDIN.
     try:
-        payload_json = sys.stdin.read()
-        payload = json.loads(payload_json)
+        payload_json = sys.stdin.buffer.read()
+        payload = json.loads(payload_json.decode('ASCII'))
     except Exception as e:
         logger.error('Failed to load the payload from STDIN as JSON: {0}'.format(e.message))
         exit(-1)
