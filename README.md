@@ -6,7 +6,7 @@ Job routing utility that can be used by a gearman server to interpret job payloa
 
 ## Requirements
 
-This program requires Python 2.7.
+This program requires Python 3.
 
 ## Installation
 
